@@ -14,4 +14,13 @@
  */
 export function arraySum(numbers: number[]): number {
     // 在此實現函式
+    if(!numbers.length) {
+        return 0
+    }
+
+    let answer = numbers.reduce((total, e) => {
+        return total + e
+    })
+
+    return answer
 }
